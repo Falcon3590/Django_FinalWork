@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+<a href="/">Регистрация</a>
+<a href="/login/">Авторизация</a>
+<h1>Просмотр рецептов</h1>
+{%for i in list_a%}
+<a href={{i.0}}>Посмотреть {{i.1}}</a><br>
+{%endfor%}
+</body>
+</html>

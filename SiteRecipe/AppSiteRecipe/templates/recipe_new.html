@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление</title>
+</head>
+<body>
+<form action="." method="post">
+    {{ recipe_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Добавить"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+<a href="/recipe">Просмотр рецептов</a>
+<a href="/login/">Авторизация</a>
+<h1>Создание аккаунта</h1>
+<p>Пожалуйста, заполните форму:</p>
+<form action="." method="post">
+    {{ user_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Создать аккаунт"></p>
+</form>
+</body>
+</html>
